@@ -29,6 +29,7 @@ int main(){
 	//Here, we assign the first index of the series, that is, the second element, as the key value.
 	//And differently, here we scan from right to left.(so we look to the left, not the right of the array.)
 	//If there is a number greater than the key value to the left of the array, this number is shifted to the right.
+	//The value of j is a variable that we use to check the numbers to the left of the value of i.
 	
 	for(i=1;i<size;i++){
 		int element=array[i];
