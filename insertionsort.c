@@ -25,11 +25,15 @@ int main(){
 	for(k=0;k<size;k++){
 		scanf("%d",&array[k]);
 	  }
+	//In the selection sort, we have assigned the first element of the array as the minimum value for the key. 
+	//Here, we assign the first index of the series, that is, the second element, as the key value.
+	//And differently, here we scan from right to left.(so we look to the left, not the right of the array.)
+	//If there is a number greater than the key value to the left of the array, this number is shifted to the right.
 	
 	for(i=1;i<size;i++){
 		int element=array[i];
 		j=i-1;
-		while(j>=0 && array[j]>element){
+		while(j>=0 && array[j]>element){//The larger number is put on the right
 			array[j+1]=array[j];
 			j--;
 		}
