@@ -35,8 +35,8 @@ int main(){
 		int element=array[i];
 		j=i-1;
 		while(j>=0 && array[j]>element){//The larger number is put on the right
-			array[j+1]=array[j];
-			j--;
+			array[j+1]=array[j];//This makes only one step swipe.
+			j--;//So I decrease j every step.
 		}
 		array[j+1]=element;
 	}
